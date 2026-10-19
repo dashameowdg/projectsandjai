@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра с авторизацией</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Окно авторизации и регистрации -->
+    <div id="auth-container" class="box">
+        <h2 id="auth-title">Вход в аккаунт</h2>
+        <form id="auth-form">
+            <input type="text" id="username" placeholder="Логин" required>
+            <input type="password" id="password" placeholder="Пароль" required>
+            <button type="submit" id="submit-btn">Войти</button>
+        </form>
+        <p id="toggle-auth">Нет аккаунта? <span id="toggle-link">Зарегистрироваться</span></p>
+        <p id="auth-message" class="error"></p>
+    </div>
+
+    <!-- Игровой интерфейс (скрыт по умолчанию) -->
+    <div id="game-container" class="box hidden">
+        <h2>Добро пожаловать, <span id="user-display"></span></h2>
+        
+        <button id="attack-btn" class="btn-attack"> АТАКОВАТЬ базу данным</button>
+        <br><br>
+        <button id="logout-btn">Выйти из аккаунта</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
